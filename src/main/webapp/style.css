@@ -3,6 +3,7 @@ html, body{
 	margin: 0;
 	min-height: 100%;
 	color: white;
+	font-family: DejaVu Sans Mono, monospace;
 }
 .container{
 	margin-top: 50px;
@@ -10,7 +11,6 @@ html, body{
 	border-radius: 20px;
 	background-image: linear-gradient(to bottom right,/*#CCFFFF, lightblue, #FFFFFF*/ blue, lightblue);
 	background-size: 400% 400%;
-	
 	animation: gradientAnimation 10s ease infinite;
 	box-shadow: 1px 1px 30px #000099;	
 	transition: 0.5s;
