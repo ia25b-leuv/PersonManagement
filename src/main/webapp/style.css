@@ -76,6 +76,7 @@ table{
 	scale: 1.05;
 	transition: 0.5s;
 	background-color: blue;
+	box-shadow: 1px 1px 20px black;
 }
 .sortierenButton{
 	margin-bottom: 10px;
