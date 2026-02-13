@@ -3,7 +3,6 @@ html, body{
 	margin: 0;
 	min-height: 100%;
 	color: white;
-	font-family: DejaVu Sans Mono, monospace;
 }
 .container{
 	margin-top: 50px;
