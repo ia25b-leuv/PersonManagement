@@ -65,13 +65,14 @@ table{
 }
 .button{
 	color: white;
-	background-color: #566cf2;
+	background-image: linear-gradient(to left, lightblue, blue);
 	border-radius: 3px;
 	border: 2px solid black;
 	scale: 1;
 	transition: 0.5s
 }
 .button:hover{
+	background-image: linear-gradient(to right, lightblue, blue);
 	scale: 1.05;
 	transition: 0.5s;
 	background-color: blue;
@@ -83,6 +84,12 @@ input{
 	border: 2px solid black;
 	scale: 1;
 	transition: 0.5s;
+}
+.inputFeld{
+	box-shadow: 10px 10px 10px #000099;	
+}
+.inputFeld:hover{
+	box-shadow: 10px 10px 20px #000099;
 }
 input:hover{
 	scale: 1.05;

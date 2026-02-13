@@ -22,19 +22,19 @@
 				<div class="row inhaltZentriert">
 					<div class="col-12">
 						<label for="vorname">Vorname:</label><br>
-						<input type="text" name="vorname" id="vorname" value="${vorname}" required><br>
+						<input type="text" class="inputFeld" name="vorname" id="vorname" value="${vorname}" required><br>
 					</div>
 				</div>
 				<div class="row inhaltZentriert	">
 					<div class="col-12">
 						<label for="nachname">Nachname:</label><br>
-						<input type="text" name="nachname" id="nachname" value="${nachname}" required><br><br>
+						<input type="text" class="inputFeld" name="nachname" id="nachname" value="${nachname}" required><br><br>
 					</div>
 				</div>
 				<div class="row inhaltZentriert">
 					<div class="col-12">
 						<label for="geburtsdatum">Geburtsdatum</label><br>
-						<input type="date" name="geburtsdatum" id="geburtsdatum" min="0001-01-01" max="9999-12-31" value="${geburtsdatum}" required><br><br>
+						<input type="date" class="inputFeld" name="geburtsdatum" id="geburtsdatum" min="0001-01-01" max="9999-12-31" value="${geburtsdatum}" required><br><br>
 					</div>
 				</div>
 				<input type="hidden" name="uuid" value="${uuid}">
