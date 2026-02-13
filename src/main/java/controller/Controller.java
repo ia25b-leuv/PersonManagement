@@ -22,7 +22,8 @@ public class Controller extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		ArrayList<Person> persons = PersonService.getPersons();
+		String sortierung = request.getParameter("method");
+		ArrayList<Person> persons = PersonService.getPersons(sortierung);
 		request.setAttribute("persons", persons);
 		request.getRequestDispatcher("listPersons.jsp").forward(request, response);;
 	}
@@ -49,7 +50,9 @@ public class Controller extends HttpServlet{
 		}else if(methode.equals("updatePerson")) {
 			doPut(request, response);
 			return;
-		}
+		}/*else if(methode.equals("datumAufsteigend")) {
+			
+		}*/
 		
 		Person person = new Person(vorname, nachname, geburtsdatum);
 		

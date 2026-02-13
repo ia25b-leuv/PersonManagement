@@ -84,6 +84,22 @@
 			</c:choose>
 			<div class="row">
 				<div class="col-12">
+					<form action="personen" method="GET">
+						<input type="hidden" name="method" id="methode" value="datumAufsteigend">
+						<input type="submit" class="button sortierenButton" value="Nach Datum sortieren (aufsteigend)">
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<form action="personen" method="GET">
+						<input type="hidden" name="method" id="methode" value="datumAbsteigend">
+						<input type="submit" class="button" value="Nach Datum sortieren (absteigend)">
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
 					<a href="createPerson.html">
 						<button class="button" id="personErstellen">
 							Person erstellen

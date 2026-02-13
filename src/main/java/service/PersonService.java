@@ -107,15 +107,22 @@ public class PersonService {
 
 	}
 	
-	public static ArrayList<Person> getPersons(){
+	public static ArrayList<Person> getPersons(String method){
 		//return persons;
 		ArrayList<Person> persons = new ArrayList<>();
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet resultSet = null;
+		String sqlSelect = "SELECT * FROM persons";
 		try {
 			connection = DBConnector.getConnection();
-			String sqlSelect = "SELECT * FROM persons";
+			if(method != null) {
+				if(method.equals("datumAufsteigend")) {
+					sqlSelect = "SELECT * FROM persons ORDER BY geburtsdatum ASC";
+				}else if(method.equals("datumAbsteigend")) {
+					sqlSelect = "SELECT * FROM persons ORDER BY geburtsdatum DESC";
+				}
+			}
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery(sqlSelect);
 			

@@ -77,6 +77,10 @@ table{
 	transition: 0.5s;
 	background-color: blue;
 }
+.sortierenButton{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 input{
 	background-color: #566cf2;
 	color: white;
